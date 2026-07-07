@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medan, Indonesia — Pros & Cons</title>
+
+<style>
+    :root {
+        --ink: #241a12;
+        --paper: #f4ede1;
+        --gold: #b8863b;
+        --gold-dark: #8a6329;
+        --teal: #2f5d55;
+        --teal-dark: #1e3d37;
+        --line: rgba(36, 26, 18, 0.15);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--paper);
+        color: var(--ink);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+        background-color: var(--teal-dark);
+        color: var(--paper);
+        text-align: center;
+        padding: 40px 20px 32px;
+    }
+
+    header .eyebrow {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: var(--gold);
+        margin: 0 0 10px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: clamp(32px, 6vw, 48px);
+        font-weight: 700;
+    }
+
+    header p {
+        margin: 10px 0 0;
+        font-size: 15px;
+        opacity: 0.8;
+    }
+
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px 20px 20px;
+    }
+
+    .intro {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 32px;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #4a3d2e;
+    }
+
+    .columns-container {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 300px;
+        background: #fffaf1;
+        border-radius: 6px;
+        border: 1px solid var(--line);
+        box-shadow: 6px 6px 0 var(--line);
+        padding: 24px 26px 28px;
+    }
+
+    .card h3 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 18px;
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+        border-bottom: 2px solid currentColor;
+    }
+
+    .pros h3 { color: var(--teal); }
+    .cons h3 { color: var(--gold-dark); }
+
+    .card h3::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: currentColor;
+        flex-shrink: 0;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        padding: 10px 0;
+        line-height: 1.5;
+        border-bottom: 1px dashed var(--line);
+        font-size: 15px;
+    }
+
+    li:last-child { border-bottom: none; }
+
+    .pros li::before {
+        content: '+ ';
+        color: var(--teal);
+        font-weight: bold;
+    }
+
+    .cons li::before {
+        content: '– ';
+        color: var(--gold-dark);
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px 20px 40px;
+        font-size: 13px;
+        color: #6b5c48;
+    }
+
+    @media (max-width: 640px) {
+        .columns-container { flex-direction: column; }
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <p class="eyebrow">Sumatra, Indonesia</p>
+        <h1>Medan</h1>
+        <p>A peek of the city</p>
+    </header>
+
+    <main>
+        <p class="intro">
+            Medan is Indonesia's largest city outside Java — known for affordable living,
+            street food, and a fast-paced urban rhythm. Here's a balanced look at what
+            makes it appealing and what takes some getting used to.
+        </p>
+
+        <div class="columns-container">
+            <div class="card pros">
+                <h3>Pros</h3>
+                <ul>
+                    <li>Cheap, excellent street food</li>
+                    <li>Affordable housing</li>
+                    <li>Great online shopping and delivery culture</li>
+                    <li>Lively, sociable neighborhoods</li>
+                    <li>Stores and stalls within easy reach</li>
+                </ul>
+            </div>
+
+            <div class="card cons">
+                <h3>Cons</h3>
+                <ul>
+                    <li>Theft and robbery risk</li>
+                    <li>Heavy air pollution and traffic</li>
+                    <li>High smoking rates in public spaces</li>
+                    <li>Corruption in local institutions</li>
+                    <li>Nobody has a driving license</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Made by Daniel, Pls don't come after me Indonesia.
+    </footer>
+
+</body>
+</html>
